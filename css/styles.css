@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root  {
+    --black: rgba(0, 0, 0, 1);
+    --Rich-Black: rgba(10, 17, 31, 1);
+    --oxford-blue: rgba(20, 33, 61, 1);
+    --coyote-brown: rgba(136, 98, 39, 1);
+    --orange-web: rgba(252, 163, 17, 1);
+    --Gold-crayola: rgba(241, 196, 123, 1);
+    --cultured: rgba(242, 242, 242, 1);
+    --platinum: rgba(229, 229, 229, 1);
+    --withe: rgba(255, 255, 255, 1);
+}
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/* ===========================================BODY============================================================================================= */
+body{
+    background-color: var(--oxford-blue);
+}
+/* ===========================================HEADER======================================================================= */
+header{
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62px;
+    background-color: var(--Rich-Black)
+}
+/* ===========================================MAIN========================================================================= */
+main{
+    width: 100%;
+    min-width: 320px;
+    background-color: var(--oxford-blue);
+    height: 76.8vh;
+}
+
+
+
+main section h1{
+    margin: 50px;
+    font-size: 4.5rem;
+    color: var(--platinum);
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+
+}
+
+.game-container{
+    display: flex;
+    justify-content: space-around;
+}
+.option-container{ /* div*/
+    width: 25%;
+    max-width: 140px;
+    height: 200px;
+    text-align: center;
+}
+
+.option-container p{
+    font-size: 1.3rem;
+    color: var(--platinum);
+    margin-top: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.game-container button{
+    color: red;
+    font-size: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    background-position: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+
+.piedra{
+    background-image: url('../assets/img/piedra.png');
+}
+.papel{
+    background-image: url('../assets/img/papel.png');
+}
+.tijeras{
+    background-image: url('../assets/img/tijera.png');
+}
+
+
+.resultado {
+    text-align: center;
+    width: 80%;
+    display: none;
+    margin: 0 auto;
+}
+.resultado h2{
+    font-size: 2.5rem;
+    color: var(--platinum);
+    margin-top: 20px;
+    font-family: 'Press Start 2P', cursive;
+    width: 100%;
+    
+}
+
+.resultado img {
+    display: none;
+    margin: 0 auto;
+}
+
+.reset-container{
+    display: flex;
+    border: 1px solid var(--Rich-Black);
+    background-color: rgba(10, 17, 31, .8);
+    width: 60%;
+    min-width: 220px;
+    max-width: 270px;
+    outline: none;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.reset-container a{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    color: var(--orange-web);
+    text-decoration: none;
+    
+    
+}
+
+
+
+
+
+/* ===========================================FOOTER======================================================================= */
+
+footer{
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--Rich-Black);
+}
+
+.footer-left{
+    min-width: 320px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+.footer-left h3{
+    font-size: 1.5rem;
+    padding: 10px 0;
+    text-align: center;
+    color: var(--platinum);
+}
+
+.footer-right{
+    min-width: 320px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+.footer-right a{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    margin: 10px 20px;
+}
+
+.facebook{
+    background-image: url(../assets/icon/facebook.png);
+}
+
+.instagram{
+    background-image: url(../assets/icon/instagram.png);
+}
+
+.twitter{
+    background-image: url(../assets/icon/twitter.png);
+}
+
+.github{
+    background-image: url(../assets/icon/github.png);
+}
