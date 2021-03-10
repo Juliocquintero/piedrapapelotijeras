@@ -38,14 +38,13 @@ main{
     width: 100%;
     min-width: 320px;
     background-color: var(--oxford-blue);
-    height: 76.8vh;
+    height: 67vh;
 }
 
-
-
 main section h1{
-    margin: 50px;
-    font-size: 4.5rem;
+    margin: 20px;
+    font-size: 4rem;
+    line-height: 4rem;
     color: var(--platinum);
     text-align: center;
     font-family: 'Bungee Shade', cursive;
@@ -102,19 +101,41 @@ main section h1{
     display: none;
     margin: 0 auto;
 }
+.resultado img {
+    width: 100px;
+    height: 105px;
+    display: none;
+    margin: 0 auto;
+}
 .resultado h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--platinum);
-    margin-top: 20px;
+    margin-top: 15px;
     font-family: 'Press Start 2P', cursive;
     width: 100%;
     
 }
 
-.resultado img {
-    display: none;
+.resultadoElegido-Container{
+    display: flex;
+    width: 80%;
+    min-width: 220px;
+    max-width: 320px;
+    outline: none;
     margin: 0 auto;
+    margin-top: 25px;
+    height: 65px;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    background-color: var(--Rich-Black);
 }
+
+.resultado span {
+    font-size: 1.5rem;
+    color: var(--platinum);
+}
+
 
 .reset-container{
     display: flex;
@@ -125,8 +146,7 @@ main section h1{
     max-width: 270px;
     outline: none;
     margin: 0 auto;
-    margin-top: 50px;
-    height: 50px;
+    margin-top: 25px;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -135,8 +155,10 @@ main section h1{
 .reset-container a{
     font-family: 'Press Start 2P', cursive;
     font-size: 1.5rem;
+    line-height: 4rem;
     color: var(--orange-web);
     text-decoration: none;
+    width: 100%;
     
     
 }
@@ -200,4 +222,37 @@ footer{
 
 .github{
     background-image: url(../assets/icon/github.png);
+}
+
+@media screen and (min-width: 800px){
+    html {
+        font-size: 78%;
+    }
+    main{
+        height: 78.1vh;
+    }
+    main section h1{
+        margin: 40px; 
+    }
+    .game-container{
+        margin-top: 75px;
+    }
+    .reset-container{
+        margin-top: 50px;
+    }
+
+    .resultadoElegido-Container{
+        margin-top: 50px;
+    }
+
+    .resultado h2{
+    margin-top: 20px;
+    }
+.resultado img {
+    display: none;
+    margin: 0 auto;
+    width: 120px;
+    height: 125px;
+}
+
 }

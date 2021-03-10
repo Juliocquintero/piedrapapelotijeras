@@ -10,13 +10,14 @@
     var resultadoImgTie = document.getElementById("resultadoImgTie");
     var resultadoImgLoose = document.getElementById("resultadoImgLoose");
     var resultadoText = document.getElementById("resultadoH2");
+    var resultadoElegido =document.getElementById("resultadoElegido")
 
     //Eventos
-    piedraBoton.addEventListener("click", () => play ("piedra"));
+    piedraBoton.addEventListener("click", () => play ("Piedra"));
 
-    papelBoton.addEventListener("click", () => play ("papel"));
+    papelBoton.addEventListener("click", () => play ("Papel"));
     
-    tijerasBoton.addEventListener("click", () => play ("tijeras"));
+    tijerasBoton.addEventListener("click", () => play ("Tijeras"));
 
     //Resultados
 
@@ -49,25 +50,31 @@
 // Funcion de juego del computador:
 
 function jugadapc(){
-    var opciones = ["piedra", "papel", "tijeras"];
+    var opciones = ["Piedra", "Papel", "Tijeras"];
     var random = Math.floor(Math.random() * 3);
     var jugada = opciones [random]
     return jugada;
 }
+
 // Funcion del juego en sí.
 function play (opcion){
     var pc =  jugadapc();
     var user = opcion;
     if (user == pc) {
         tie();
-    } else if (user == "piedra" && pc == "tijeras"){
+        resultadoElegido.innerHTML = "Tu elegiste: "+opcion+" <br> La maquina eligió: " +pc;
+    } else if (user == "Piedra" && pc == "Tijeras"){
         win ();
-    } else if (user ==  "papel" && pc == "piedra"){
+        resultadoElegido.innerHTML = "Tu elegiste: "+opcion+" <br> La maquina eligió: " +pc;
+    } else if (user ==  "Papel" && pc == "Piedra"){
         win();
-    } else if (user == "tijeras" && pc == "piedra"){
+        resultadoElegido.innerHTML = "Tu elegiste: "+opcion+" <br> La maquina eligió: " +pc;
+    } else if (user == "Tijeras" && pc == "Papel"){
         win();
+        resultadoElegido.innerHTML = "Tu elegiste: "+opcion+" <br> La maquina eligió: " +pc;
     } else {
-        loose();       
+        loose();      
+        resultadoElegido.innerHTML = "Tu elegiste: "+opcion+" <br> La maquina eligió: " +pc; 
 }
 // alert ("usuario: "+opcion+" | computadora:" +pc)
 }
