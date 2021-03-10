@@ -1,7 +1,5 @@
+    //Variables
     var user;
-//     var rock = 1;
-//     var paper = 2;
-//     var scissors = 3;
     var titulo = document.getElementById("tituloH1");
     var piedraBoton = document.getElementById("piedra");
     var papelBoton = document.getElementById ("papel");
@@ -13,25 +11,14 @@
     var resultadoImgLoose = document.getElementById("resultadoImgLoose");
     var resultadoText = document.getElementById("resultadoH2");
 
-//     function opcionPiedra() {
-//         user = rock;
-//     };
-
-//     function opcionPapel() {
-//         user = paper;
-//     };
-
-//     function opcionTijeras() {
-//         user = scissors;
-//     };
-
-
-
+    //Eventos
     piedraBoton.addEventListener("click", () => play ("piedra"));
 
     papelBoton.addEventListener("click", () => play ("papel"));
     
     tijerasBoton.addEventListener("click", () => play ("tijeras"));
+
+    //Resultados
 
     var win = function () {
         resultado.style.display = "block";
@@ -59,7 +46,7 @@
         resultadoImgLoose.style.display = "block";
        };
 
-
+// Funcion de juego del computador:
 
 function jugadapc(){
     var opciones = ["piedra", "papel", "tijeras"];
@@ -67,7 +54,7 @@ function jugadapc(){
     var jugada = opciones [random]
     return jugada;
 }
-
+// Funcion del juego en sí.
 function play (opcion){
     var pc =  jugadapc();
     var user = opcion;
