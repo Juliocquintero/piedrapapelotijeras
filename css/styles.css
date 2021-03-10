@@ -41,7 +41,7 @@ main{
     height: 67vh;
 }
 
-main section h1{
+ main section h1{  /*Titulo */
     margin: 20px;
     font-size: 4rem;
     line-height: 4rem;
@@ -51,7 +51,7 @@ main section h1{
 
 }
 
-.game-container{
+.game-container{ /*Div principal donde estan ubicadas las opciones */
     display: flex;
     justify-content: space-around;
 }
@@ -95,7 +95,7 @@ main section h1{
 }
 
 
-.resultado {
+.resultado { /* Div resultado, donde esta ubicado los resultados. Por defecto en display none, una vez se ejecute la eleccion pasan a display block */
     text-align: center;
     width: 80%;
     display: none;
@@ -223,20 +223,24 @@ footer{
 .github{
     background-image: url(../assets/icon/github.png);
 }
-
+/* ===========================================media 800px========================================================================= */
 @media screen and (min-width: 800px){
     html {
         font-size: 78%;
     }
+
     main{
         height: 78.1vh;
     }
+
     main section h1{
         margin: 40px; 
     }
+
     .game-container{
         margin-top: 75px;
     }
+
     .reset-container{
         margin-top: 50px;
     }
@@ -246,13 +250,12 @@ footer{
     }
 
     .resultado h2{
-    margin-top: 20px;
+        margin-top: 20px;
     }
-.resultado img {
-    display: none;
-    margin: 0 auto;
-    width: 120px;
-    height: 125px;
-}
-
-}
+    .resultado img {
+        display: none;
+        margin: 0 auto;
+        width: 120px;
+        height: 125px;
+    }
+} /* Final  del media 800px*/
